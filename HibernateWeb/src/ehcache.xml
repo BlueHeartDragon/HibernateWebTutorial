@@ -1,0 +1,36 @@
+<!-- 
+####################################################
+####################################################
+####################################################
++++++++++Unable to set this as config file++++++++++
+####################################################
+####################################################
+####################################################
+ -->
+
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ehcache.xsd">
+
+<!--    <diskS -->tore path="java.io.tmpdir"/>
+	
+<diskStore path="/home/libsys/Desktop/Intern"/>
+
+<defaultCache
+      maxElementsInMemory="400000"
+      eternal="false"
+      timeToIdleSeconds="0"
+      timeToLiveSeconds="1800"
+      overflowToDisk="false"
+      diskPersistent="false"
+      diskExpiryThreadIntervalSeconds="120"
+      memoryStoreEvictionPolicy="LRU"
+/>
+
+   <cache name="Employee"
+      maxElementsInMemory="50"
+      eternal="false"
+      timeToIdleSeconds="0"
+      timeToLiveSeconds="1800"
+      overflowToDisk="false"
+      />
+</ehcache>
