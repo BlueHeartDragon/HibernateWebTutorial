@@ -1,0 +1,20 @@
+<hibernate-mapping>
+	<class name="Employee" table="EMPLOYEE">
+		<meta attribute = "class-discription">
+			This class contains employee detail.
+		</meta>
+		
+		<cache usage = "read-write"/>
+		
+		<id name="eid" type="int" column = "id">
+			<generator class="native"/>
+		</id>
+		
+		<property name="fname" column="first_name" type="string" />
+		<property name="lname" column="last_name" type="string" />
+		<property name="salary" column="salary" type="int" />
+		<property name="secretKey" column="secret" type="string" />
+	
+	</class>
+
+</hibernate-mapping>

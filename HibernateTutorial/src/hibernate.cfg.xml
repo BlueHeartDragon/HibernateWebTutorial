@@ -1,0 +1,24 @@
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://192.168.1.62/hibernate_tutorial</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Libsys@1234</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.connection.autocommit">true</property>
+
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- second-level cache. Cache-provider = Ehcache -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+
+		<mapping resource="Employee.hbm.xml" />
+
+	</session-factory>
+
+</hibernate-configuration>
